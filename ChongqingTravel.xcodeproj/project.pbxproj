@@ -7,14 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14B838DB35F1280332783D50 /* Pods_ChongqingTravel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747FC9C21762019D6430941A /* Pods_ChongqingTravel.framework */; };
+		77045EE4222686B20066480A /* IrregularityBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77045EE3222686B20066480A /* IrregularityBasicContentView.swift */; };
+		77045EE6222686F50066480A /* BouncesContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77045EE5222686F50066480A /* BouncesContentView.swift */; };
+		77045EE8222687160066480A /* BasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77045EE7222687160066480A /* BasicContentView.swift */; };
+		77045EED2226895C0066480A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77045EEC2226895C0066480A /* NavigationController.swift */; };
 		77607A3A220176220018F4D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77607A39220176220018F4D8 /* AppDelegate.swift */; };
 		77607A3C220176220018F4D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77607A3B220176220018F4D8 /* ViewController.swift */; };
 		77607A3F220176220018F4D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77607A3D220176220018F4D8 /* Main.storyboard */; };
 		77607A41220176230018F4D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77607A40220176230018F4D8 /* Assets.xcassets */; };
 		77607A44220176230018F4D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77607A42220176230018F4D8 /* LaunchScreen.storyboard */; };
+		77607A61220183BD0018F4D8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77607A60220183BD0018F4D8 /* MainViewController.swift */; };
+		77607A64220187AF0018F4D8 /* ChongqingTravelLaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 77607A63220187AF0018F4D8 /* ChongqingTravelLaunchImage.png */; };
+		77607A66220192970018F4D8 /* MyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77607A65220192970018F4D8 /* MyInfoViewController.swift */; };
+		77607A68220192EA0018F4D8 /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77607A67220192EA0018F4D8 /* DiscoveryViewController.swift */; };
+		77607A6A2201941B0018F4D8 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77607A692201941B0018F4D8 /* SplashViewController.swift */; };
+		77607A6D2202937C0018F4D8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77607A6C2202937C0018F4D8 /* BaseViewController.swift */; };
+		77607A702202DF040018F4D8 /* HomePageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77607A6F2202DF040018F4D8 /* HomePageHeaderView.swift */; };
+		77607A732202E1800018F4D8 /* HomeHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77607A722202E1800018F4D8 /* HomeHeaderCell.swift */; };
+		77607A792202EC430018F4D8 /* HomePageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77607A782202EC430018F4D8 /* HomePageModel.swift */; };
+		77883011221CEB4C00CB6657 /* JsonMsgIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77883010221CEB4C00CB6657 /* JsonMsgIn.swift */; };
+		778C1CAA2204260300C6897D /* HomeGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778C1CA92204260300C6897D /* HomeGridCell.swift */; };
+		778C1CAC2204380100C6897D /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778C1CAB2204380100C6897D /* Const.swift */; };
+		77E0EA96221E884C0088C14E /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E0EA95221E884C0088C14E /* Util.swift */; };
+		77E0EA98221E89F70088C14E /* HttpUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E0EA97221E89F70088C14E /* HttpUtil.swift */; };
+		77E0EA9A221E92120088C14E /* SecurityTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E0EA99221E92120088C14E /* SecurityTools.swift */; };
+		77E0EA9D221E9CB80088C14E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E0EA9C221E9CB80088C14E /* User.swift */; };
+		77E0EADC221F9C240088C14E /* JsonMsgOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E0EADB221F9C240088C14E /* JsonMsgOut.swift */; };
+		77E0EADE221FC6990088C14E /* BaseMsgEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E0EADD221FC6990088C14E /* BaseMsgEntity.swift */; };
+		77E0EAE0221FCB1C0088C14E /* BaseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E0EADF221FCB1C0088C14E /* BaseEntity.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		77E0EABB221F92250088C14E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		747FC9C21762019D6430941A /* Pods_ChongqingTravel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChongqingTravel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77045EE3222686B20066480A /* IrregularityBasicContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrregularityBasicContentView.swift; sourceTree = "<group>"; };
+		77045EE5222686F50066480A /* BouncesContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouncesContentView.swift; sourceTree = "<group>"; };
+		77045EE7222687160066480A /* BasicContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicContentView.swift; sourceTree = "<group>"; };
+		77045EEC2226895C0066480A /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		77607A36220176220018F4D8 /* ChongqingTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChongqingTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77607A39220176220018F4D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77607A3B220176220018F4D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +64,28 @@
 		77607A40220176230018F4D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77607A43220176230018F4D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77607A45220176240018F4D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77607A60220183BD0018F4D8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		77607A63220187AF0018F4D8 /* ChongqingTravelLaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChongqingTravelLaunchImage.png; sourceTree = "<group>"; };
+		77607A65220192970018F4D8 /* MyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoViewController.swift; sourceTree = "<group>"; };
+		77607A67220192EA0018F4D8 /* DiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
+		77607A692201941B0018F4D8 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		77607A6C2202937C0018F4D8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		77607A6F2202DF040018F4D8 /* HomePageHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageHeaderView.swift; sourceTree = "<group>"; };
+		77607A722202E1800018F4D8 /* HomeHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderCell.swift; sourceTree = "<group>"; };
+		77607A782202EC430018F4D8 /* HomePageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageModel.swift; sourceTree = "<group>"; };
+		77883010221CEB4C00CB6657 /* JsonMsgIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonMsgIn.swift; sourceTree = "<group>"; };
+		778C1CA92204260300C6897D /* HomeGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGridCell.swift; sourceTree = "<group>"; };
+		778C1CAB2204380100C6897D /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		77E0EA95221E884C0088C14E /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		77E0EA97221E89F70088C14E /* HttpUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpUtil.swift; sourceTree = "<group>"; };
+		77E0EA99221E92120088C14E /* SecurityTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityTools.swift; sourceTree = "<group>"; };
+		77E0EA9B221E98F10088C14E /* Localizable.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = Localizable.apns; sourceTree = "<group>"; };
+		77E0EA9C221E9CB80088C14E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		77E0EADB221F9C240088C14E /* JsonMsgOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonMsgOut.swift; sourceTree = "<group>"; };
+		77E0EADD221FC6990088C14E /* BaseMsgEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMsgEntity.swift; sourceTree = "<group>"; };
+		77E0EADF221FCB1C0088C14E /* BaseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEntity.swift; sourceTree = "<group>"; };
+		7EA400D8DC1B2C936148216C /* Pods-ChongqingTravel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChongqingTravel.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChongqingTravel/Pods-ChongqingTravel.release.xcconfig"; sourceTree = "<group>"; };
+		DA36584B2AE69BF1DE54C83D /* Pods-ChongqingTravel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChongqingTravel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChongqingTravel/Pods-ChongqingTravel.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +93,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14B838DB35F1280332783D50 /* Pods_ChongqingTravel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43DE7DDCD926EBC63130E7A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA36584B2AE69BF1DE54C83D /* Pods-ChongqingTravel.debug.xcconfig */,
+				7EA400D8DC1B2C936148216C /* Pods-ChongqingTravel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		77045EE9222689040066480A /* TabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				77045EE3222686B20066480A /* IrregularityBasicContentView.swift */,
+				77045EE5222686F50066480A /* BouncesContentView.swift */,
+				77045EE7222687160066480A /* BasicContentView.swift */,
+				77045EEC2226895C0066480A /* NavigationController.swift */,
+			);
+			path = TabBarView;
+			sourceTree = "<group>";
+		};
 		77607A2D220176220018F4D8 = {
 			isa = PBXGroup;
 			children = (
 				77607A38220176220018F4D8 /* ChongqingTravel */,
 				77607A37220176220018F4D8 /* Products */,
+				43DE7DDCD926EBC63130E7A4 /* Pods */,
+				9B5E417BAA79F5BF2A1E73DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +141,107 @@
 		77607A38220176220018F4D8 /* ChongqingTravel */ = {
 			isa = PBXGroup;
 			children = (
+				77045EE9222689040066480A /* TabBarView */,
+				77E0EA94221E86DE0088C14E /* Common */,
+				77607A772202EBA60018F4D8 /* Model */,
+				77607A742202E3B60018F4D8 /* viewModel */,
+				77607A712202E1580018F4D8 /* HeaderCell */,
+				77607A6E2202DECE0018F4D8 /* view */,
+				77607A62220186E70018F4D8 /* images */,
+				77607A5F220183AF0018F4D8 /* ViewController */,
+				77607A5E220183A00018F4D8 /* Storyboard */,
 				77607A39220176220018F4D8 /* AppDelegate.swift */,
 				77607A3B220176220018F4D8 /* ViewController.swift */,
-				77607A3D220176220018F4D8 /* Main.storyboard */,
 				77607A40220176230018F4D8 /* Assets.xcassets */,
 				77607A42220176230018F4D8 /* LaunchScreen.storyboard */,
 				77607A45220176240018F4D8 /* Info.plist */,
+				77607A692201941B0018F4D8 /* SplashViewController.swift */,
+				778C1CAB2204380100C6897D /* Const.swift */,
+				77E0EA9B221E98F10088C14E /* Localizable.apns */,
 			);
 			path = ChongqingTravel;
+			sourceTree = "<group>";
+		};
+		77607A5E220183A00018F4D8 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				77607A3D220176220018F4D8 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		77607A5F220183AF0018F4D8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				77607A60220183BD0018F4D8 /* MainViewController.swift */,
+				77607A65220192970018F4D8 /* MyInfoViewController.swift */,
+				77607A67220192EA0018F4D8 /* DiscoveryViewController.swift */,
+				77607A6C2202937C0018F4D8 /* BaseViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		77607A62220186E70018F4D8 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				77607A63220187AF0018F4D8 /* ChongqingTravelLaunchImage.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		77607A6E2202DECE0018F4D8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				77607A6F2202DF040018F4D8 /* HomePageHeaderView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		77607A712202E1580018F4D8 /* HeaderCell */ = {
+			isa = PBXGroup;
+			children = (
+				77607A722202E1800018F4D8 /* HomeHeaderCell.swift */,
+				778C1CA92204260300C6897D /* HomeGridCell.swift */,
+			);
+			path = HeaderCell;
+			sourceTree = "<group>";
+		};
+		77607A742202E3B60018F4D8 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		77607A772202EBA60018F4D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				77E0EADD221FC6990088C14E /* BaseMsgEntity.swift */,
+				77607A782202EC430018F4D8 /* HomePageModel.swift */,
+				77883010221CEB4C00CB6657 /* JsonMsgIn.swift */,
+				77E0EA9C221E9CB80088C14E /* User.swift */,
+				77E0EADB221F9C240088C14E /* JsonMsgOut.swift */,
+				77E0EADF221FCB1C0088C14E /* BaseEntity.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		77E0EA94221E86DE0088C14E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				77E0EA95221E884C0088C14E /* Util.swift */,
+				77E0EA97221E89F70088C14E /* HttpUtil.swift */,
+				77E0EA99221E92120088C14E /* SecurityTools.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9B5E417BAA79F5BF2A1E73DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				747FC9C21762019D6430941A /* Pods_ChongqingTravel.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +251,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77607A48220176240018F4D8 /* Build configuration list for PBXNativeTarget "ChongqingTravel" */;
 			buildPhases = (
+				D5E18189E8675B1B77A15F2D /* [CP] Check Pods Manifest.lock */,
 				77607A32220176220018F4D8 /* Sources */,
 				77607A33220176220018F4D8 /* Frameworks */,
 				77607A34220176220018F4D8 /* Resources */,
+				66263B15A5FAF9C200D69272 /* [CP] Embed Pods Frameworks */,
+				77E0EABB221F92250088C14E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,18 +308,106 @@
 				77607A44220176230018F4D8 /* LaunchScreen.storyboard in Resources */,
 				77607A41220176230018F4D8 /* Assets.xcassets in Resources */,
 				77607A3F220176220018F4D8 /* Main.storyboard in Resources */,
+				77607A64220187AF0018F4D8 /* ChongqingTravelLaunchImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		66263B15A5FAF9C200D69272 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ChongqingTravel/Pods-ChongqingTravel-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/EVReflection/EVReflection.framework",
+				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyRSA/SwiftyRSA.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EVReflection.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyRSA.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChongqingTravel/Pods-ChongqingTravel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5E18189E8675B1B77A15F2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChongqingTravel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		77607A32220176220018F4D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				778C1CAA2204260300C6897D /* HomeGridCell.swift in Sources */,
+				77607A68220192EA0018F4D8 /* DiscoveryViewController.swift in Sources */,
 				77607A3C220176220018F4D8 /* ViewController.swift in Sources */,
+				77E0EA96221E884C0088C14E /* Util.swift in Sources */,
+				77E0EA98221E89F70088C14E /* HttpUtil.swift in Sources */,
+				77607A66220192970018F4D8 /* MyInfoViewController.swift in Sources */,
+				77607A6A2201941B0018F4D8 /* SplashViewController.swift in Sources */,
+				77045EE6222686F50066480A /* BouncesContentView.swift in Sources */,
 				77607A3A220176220018F4D8 /* AppDelegate.swift in Sources */,
+				77045EE4222686B20066480A /* IrregularityBasicContentView.swift in Sources */,
+				77607A702202DF040018F4D8 /* HomePageHeaderView.swift in Sources */,
+				77607A6D2202937C0018F4D8 /* BaseViewController.swift in Sources */,
+				77E0EA9A221E92120088C14E /* SecurityTools.swift in Sources */,
+				77607A792202EC430018F4D8 /* HomePageModel.swift in Sources */,
+				77607A732202E1800018F4D8 /* HomeHeaderCell.swift in Sources */,
+				77E0EA9D221E9CB80088C14E /* User.swift in Sources */,
+				77607A61220183BD0018F4D8 /* MainViewController.swift in Sources */,
+				77E0EAE0221FCB1C0088C14E /* BaseEntity.swift in Sources */,
+				77E0EADC221F9C240088C14E /* JsonMsgOut.swift in Sources */,
+				77045EED2226895C0066480A /* NavigationController.swift in Sources */,
+				77E0EADE221FC6990088C14E /* BaseMsgEntity.swift in Sources */,
+				77883011221CEB4C00CB6657 /* JsonMsgIn.swift in Sources */,
+				77045EE8222687160066480A /* BasicContentView.swift in Sources */,
+				778C1CAC2204380100C6897D /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,37 +551,56 @@
 		};
 		77607A49220176240018F4D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA36584B2AE69BF1DE54C83D /* Pods-ChongqingTravel.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PQ2BT5HU87;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FSPagerView\"",
+				);
 				INFOPLIST_FILE = ChongqingTravel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.ChongqingTravel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
 		77607A4A220176240018F4D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EA400D8DC1B2C936148216C /* Pods-ChongqingTravel.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PQ2BT5HU87;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FSPagerView\"",
+				);
 				INFOPLIST_FILE = ChongqingTravel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.ChongqingTravel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};
