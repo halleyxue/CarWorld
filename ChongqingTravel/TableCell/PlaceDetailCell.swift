@@ -40,7 +40,7 @@ class PlaceDetailCell: UITableViewCell {
 extension PlaceDetailCell: FSPagerViewDelegate, FSPagerViewDataSource {
     // MARK:- FSPagerView Delegate
     func numberOfItems(in pagerView: FSPagerView) -> Int {
-//        return self.focus?.data?.count ?? 0
+        return self.focus?.data?.count ?? 0
     }
     
     func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
