@@ -10,6 +10,9 @@ import Foundation
 import UIKit
 
 class BaseViewController: UIViewController {
+    
+    typealias AddDataBlock = () ->Void
+    var updataBlock:AddDataBlock?
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -10,6 +10,6 @@ import Foundation
 import EVReflection
 
 class User: EVObject {
-    var id: String?;
-    var username: String?;
+    var id: String?
+    var username: String?
 }

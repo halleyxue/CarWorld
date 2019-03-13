@@ -39,5 +39,6 @@ struct SquareModel: HandyJSON {
     var id: String?
     var coverPath: String?
     var title: String?
+    var keyword: String?
 }
 

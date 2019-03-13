@@ -27,9 +27,6 @@ class MainViewController: BaseViewController, HttpHandler {
     var focus:FocusModel?
     var squareList: [SquareModel]?
     
-    typealias AddDataBlock = () ->Void
-    var updataBlock:AddDataBlock?
-
     var tabBar: UITabBar!
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout.init()
@@ -56,10 +53,10 @@ class MainViewController: BaseViewController, HttpHandler {
             make.width.height.equalToSuperview()
             make.center.equalToSuperview()
         }
-//        let delay = DispatchTime.now() + .milliseconds(100);
-//        DispatchQueue.main.asyncAfter(deadline: delay) {
+        let delay = DispatchTime.now() + .milliseconds(100);
+        DispatchQueue.main.asyncAfter(deadline: delay) {
           self.loadData()
-//        };
+        };
     }
 
     func loadData() {
@@ -68,7 +65,7 @@ class MainViewController: BaseViewController, HttpHandler {
         updataBlock = { [unowned self] in
             self.collectionView.reloadData()
         }
-        HttpUtil.send(url: getAction(name: HOME_PAGE_ACTION), object: reqeust, handler: self)
+        HttpUtil.send(url: getAction(name: HOME_PAGE_ACTION), object: reqeust, handler: self, block: true)
     }
 
     func onSuccess(json: String) {
@@ -106,18 +103,16 @@ extension MainViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        //        print("--------" + "\(viewModel.numberOfItemsIn(section: section))")
         return 1
     }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let moduleType = self.homeRecommendList?[indexPath.section].moduleType
-         print("=======" + "\(moduleType)")
         let cell:HomeHeaderCell = collectionView.dequeueReusableCell(withReuseIdentifier: HomePageHeaderCellID, for: indexPath) as! HomeHeaderCell
         cell.focusModel = self.focus
         cell.squareList = self.squareList
-        cell.delegate = self as? HomeHeaderCellDelegate
+        cell.delegate = self
         return cell
     }
     
@@ -163,16 +158,21 @@ extension MainViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
             return CGSize.init(width: YYScreenWidth, height: 10.0)
         }
     }
+}
+
+extension MainViewController: HomeHeaderCellDelegate {
     
-//    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-//        let moduleType = viewModel.homeRecommendList?[indexPath.section].moduleType
-//
-//        if kind == UICollectionElementKindSectionHeader {
-//            let headerView : HomePageHeaderView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: HomePageHeaderCellID, for: indexPath) as! HomePageHeaderView
-//            //            headerView.homeRecommendList = viewModel.homeRecommendList?[indexPath.section]
-//            return headerView
-//        }
-//        return UICollectionReusableView()
-//    }
+    func homeHeaderBannerClick() {
+        print("哎呀呀!咋没反应呢???")
+    }
+    
+    func homeHeaderBtnClick(keyWord: String, title: String) {
+        if keyWord != "" {
+            let vc = SubMenuController(keyWord: keyWord)
+            vc.title = title
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+
 }
 

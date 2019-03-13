@@ -17,34 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        Thread .sleep(forTimeInterval: 1)
+        Thread .sleep(forTimeInterval: 0.5)
         let tab = self.customIrregularityStyle(delegate: self as? UITabBarControllerDelegate)
         self.window?.rootViewController = tab
         self.window?.makeKeyAndVisible()
-        
-//        UINavigationBar.appearance().barTintColor = UIColor.init(red: 0.24, green: 0.79, blue: 0.83, alpha: 1)
-//
-//        UINavigationBar.appearance().tintColor = UIColor.black
-//
-//        self.window = UIWindow(frame: UIScreen.main.bounds)
-//        let myTabBar = UITabBarController()
-//
-//        let mainViewController = UINavigationController(rootViewController: MainViewController())
-//        mainViewController.tabBarItem = UITabBarItem(title: "首页", image: UIImage(named: "landmark"), tag: 200)
-//
-//        let discoveryViewController = UINavigationController(rootViewController: DiscoveryViewController())
-//        discoveryViewController.tabBarItem = UITabBarItem(title: "发现", image: UIImage(named: "park"), tag: 300)
-//
-//        let myInfoViewController = UINavigationController(rootViewController: MyInfoViewController())
-//        myInfoViewController.tabBarItem = UITabBarItem(title: "个人", image: UIImage(named: "hotel"), tag: 100)
-//
-//
-//        myTabBar.viewControllers = [mainViewController, discoveryViewController, myInfoViewController]
-//
-//        self.window!.rootViewController = myTabBar
-//
-//        // 將 UIWindow 設置為可見的
-//        self.window!.makeKeyAndVisible()
         return true
     }
     
@@ -53,13 +29,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         tabBarController.delegate = delegate
         tabBarController.title = "Irregularity"
         tabBarController.tabBar.shadowImage = UIImage(named: "transparent")
-//        tabBarController.shouldHijackHandler = {
-//            tabbarController, viewController, index in
-//            if index == 2 {
-//                return true
-//            }
-//            return false
-//        }
         let mainViewController = MainViewController()
         let discoveryViewController = DiscoveryViewController()
         let myInfoViewController = MyInfoViewController()

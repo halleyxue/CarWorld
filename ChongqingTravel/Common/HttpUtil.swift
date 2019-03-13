@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import Alamofire
 import EVReflection
+import SwiftOverlays
 
 class HttpUtil {
     public static var BASE_URL = "http://10.181.136.227:8080/CarWorld/"
@@ -17,12 +18,16 @@ class HttpUtil {
     public static let suffix = ".do"
 
     
-    class func sendPostRequest(url: String, jsonMsgIn: JsonMsgIn, handler: HttpHandler) {
+    class func sendPostRequest(url: String, jsonMsgIn: JsonMsgIn, handler: HttpHandler, block: Bool) {
+        if(block) {
+            showLoading()
+        }
         let aesKey = Util.randomNumber(length: 16)
         jsonMsgIn.aesKey = aesKey
         let content = SecurityTools.encryptByRSA(content: jsonMsgIn.toJsonString())
         let parameters: Parameters = setHttpParam(param: content)
         alamofireVerifyManager.request(BASE_URL + url, method: .post, parameters: parameters).responseString { response in
+            dismissLoading()
             if (response.result.isSuccess) {
                 print("suucess")
                 let json = SecurityTools.decryptByAES(key: aesKey, content: response.result.value!)
@@ -51,15 +56,23 @@ class HttpUtil {
         };
     }
     
-    class func send(url: String, object: EVObject, handler: HttpHandler) {
+    class func send(url: String, object: EVObject, handler: HttpHandler, block: Bool) {
         let jsonMsgIn = JsonMsgIn();
         jsonMsgIn.obj = object.toJsonString();
-        sendPostRequest(url: url, jsonMsgIn: jsonMsgIn, handler: handler);
+        sendPostRequest(url: url, jsonMsgIn: jsonMsgIn, handler: handler, block: block);
     }
     
     fileprivate class func setHttpParam(param: String)-> Parameters {
         let params: Parameters = ["jsonStr": param];
         return params;
+    }
+    
+    class func showLoading() {
+        SwiftOverlays.showBlockingWaitOverlayWithText(Util.getStringByName("loading_text_default"));
+    }
+    
+    class func dismissLoading() {
+        SwiftOverlays.removeAllBlockingOverlays();
     }
     
 }
