@@ -13,7 +13,8 @@ import EVReflection
 import SwiftOverlays
 
 class HttpUtil {
-    public static var BASE_URL = "http://10.181.136.227:8080/CarWorld/"
+    public static var BASE_URL = "http://10.187.212.84:9092/CarWorld/"
+//    public static var BASE_URL = "http://10.181.136.227:8080/CarWorld/"
     public static let alamofireVerifyManager = Alamofire.SessionManager.default;
     public static let suffix = ".do"
 
