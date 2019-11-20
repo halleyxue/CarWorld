@@ -105,7 +105,5 @@ extension PlaceViewController : UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let placeId = self.placeResults?[indexPath.row].placeId ?? 0
-        let vc = PlaceDetailController(placeId: placeId)
-        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
